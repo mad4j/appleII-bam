@@ -1,5 +1,7 @@
 # BAM Code Walkthrough
 
+## DISK CATALOG
+
 ``` basic
 > CATALOG
 
