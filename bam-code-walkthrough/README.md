@@ -19,10 +19,31 @@ DISK VOLUME 254
 
 ## HELLO
 
+
+### Initialization
+
 ``` basic
    10  DIM A$(1):A$=""
    15  PRINT A$;"NOMON C"
    20  TEXT : CALL -936
+```
+
+#### LINE 10
+
+Viene creata una stringa con il solo carattere CHR$(4). Questo carattere è richiesto per l'esecuzione di comandi DOS all'interno di un programma BASIC.
+
+#### LINE 15
+
+Esegue il comando DOS **NOMON**. Questo comando TBV
+
+#### LINE 20
+
+Imposta la modalità test (comando **TEXT**) ed esegue la routine.
+
+
+### Display Banner
+
+``` basic
    30  PRINT "****************************************";
    35  PRINT "*                                      *";
    40  PRINT "*  B E N E A T H  A P P L E  M A N O R *";
@@ -31,6 +52,14 @@ DISK VOLUME 254
    47  PRINT "*                                      *";
    50  PRINT "****************************************";
    55  PRINT
+```
+
+#### LINE 30-55
+Visualizza titolo e versione mentre viene caricato il resto del programma.
+
+### Load and Execute next step
+
+``` basic
    60  PRINT A$;"CHAIN BENEATH APPLE MANOR"
   100  END
 ```
