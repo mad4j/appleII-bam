@@ -9,7 +9,7 @@ ProDOS at the end.
 
 ## DOS
 
-**DOS** means **Disk Operating System*. A DOS is a collection of machine language
+**DOS** means **Disk Operating System**. A DOS is a collection of machine language
 routines and data which lets a computer Read and Write information to/from disk.
 Apple II DOS, Commodore 64 DOS, and the DOS used on PC's are all called "DOS";
 but, they are different systems.
