@@ -19,7 +19,6 @@ DISK VOLUME 254
 
 ## HELLO
 
-
 ### Initialization
 
 ``` basic
@@ -40,7 +39,6 @@ Esegue il comando DOS **NOMON**. Questo comando TBV
 
 Imposta la modalità test (comando **TEXT**) ed esegue la routine.
 
-
 ### Display Banner
 
 ``` basic
@@ -55,6 +53,7 @@ Imposta la modalità test (comando **TEXT**) ed esegue la routine.
 ```
 
 #### LINE 30-55
+
 Visualizza titolo e versione mentre viene caricato il resto del programma.
 
 ### Load and Execute next step
@@ -66,22 +65,24 @@ Visualizza titolo e versione mentre viene caricato il resto del programma.
 
 ## BENEATH APPLE MANOR
 
+### Initialization
+
 ``` basic
     0  TEXT
     5  IF ENTERED=1 THEN 10000
     6  POKE 204,0: POKE 205,11: POKE 74,0: POKE 75,11
    10  PRINT "BLOAD BAMSUB"
-   15 MODE=0:PX=0:PY=0:RD=0:C=0
+   15  MODE=0:PX=0:PY=0:RD=0:C=0
    16  DIM A$(15)
    20  DIM MI(7): FOR I=1 TO 7:MI(I)=0: NEXT I
-   70 NMN=4: DIM MS(NMN),MD(NMN),MB(NMN),MA(NMN),MW(NMN),MC(NMN),MF(NMN),MT(NMN),MV(NMN)
+   70  NMN=4: DIM MS(NMN),MD(NMN),MB(NMN),MA(NMN),MW(NMN),MC(NMN),MF(NMN),MT(NMN),MV(NMN)
    71  REM  MONSTER DEFINITIONS, SPEED,DEXT,BODY,ARMOR,WEAPON,COLOR,FREQ,TREAS%,TREA VALUE
-   72 MS(0)=50:MD(0)=50:MB(0)=100:MA(0)=0:MW(0)=0:MC(0)=12:MF(0)=25:MT(0)=50:MV(0)=50
-   74 MS(1)=100:MD(1)=100:MB(1)=50:MA(1)=1:MW(1)=0:MC(1)=15:MF(1)=30:MT(1)=85:MV(1)=100
+   72  MS(0)=50:MD(0)=50:MB(0)=100:MA(0)=0:MW(0)=0:MC(0)=12:MF(0)=25:MT(0)=50:MV(0)=50
+   74  MS(1)=100:MD(1)=100:MB(1)=50:MA(1)=1:MW(1)=0:MC(1)=15:MF(1)=30:MT(1)=85:MV(1)=100
    75  DIM MFT(4):MFT(0)=5:MFT(1)=20:MFT(2)=50:MFT(3)=20:MFT(4)=5
-   76 MS(2)=150:MD(2)=150:MB(2)=50:MA(2)=2:MW(2)=1:MC(2)=9:MF(2)=35:MT(2)=75:MV(2)=200
-   78 MS(3)=200:MD(3)=50:MB(3)=200:MA(3)=3:MW(3)=2:MC(3)=3:MF(3)=8:MT(3)=75:MV(3)=300
-   80 MS(4)=200:MD(4)=100:MB(4)=50:MA(4)=4:MW(4)=3:MC(4)=1:MF(4)=2:MT(4)=100:MV(4)=400
+   76  MS(2)=150:MD(2)=150:MB(2)=50:MA(2)=2:MW(2)=1:MC(2)=9:MF(2)=35:MT(2)=75:MV(2)=200
+   78  MS(3)=200:MD(3)=50:MB(3)=200:MA(3)=3:MW(3)=2:MC(3)=3:MF(3)=8:MT(3)=75:MV(3)=300
+   80  MS(4)=200:MD(4)=100:MB(4)=50:MA(4)=4:MW(4)=3:MC(4)=1:MF(4)=2:MT(4)=100:MV(4)=400
   100  CALL -936: VTAB 9: TAB 13: PRINT "B E N E A T H": PRINT 
   101  TAB 9: PRINT "A P P L E   M A N O R"
   102  PRINT : TAB 13: PRINT "BY DON WORTH"
@@ -91,21 +92,24 @@ Visualizza titolo e versione mentre viene caricato il resto del programma.
   106  FOR I=1 TO 3000: NEXT I
   108  CALL -936: PRINT "INITIAL SETUP:": PRINT 
   110  PRINT : PRINT "HOW MANY ROOMS PER LEVEL (2-10)": INPUT "(I SUGGEST 5)",NR: IF NR<2 THEN 110
-  111 V=20:H=4*NR: IF H<10 THEN H=10: IF H>40 THEN H=40: DIM MAP(H*V)
+  111  V=20:H=4*NR: IF H<10 THEN H=10: IF H>40 THEN H=40: DIM MAP(H*V)
   112  PRINT : INPUT "BLACK & WHITE OR COLOR?",A$
   114  IF A$(1,1)="B" THEN MODE=1
   120  PRINT : PRINT "WHAT DIFFICULTY FACTOR?": PRINT 
   122  PRINT "1  - A PUSHOVER": PRINT "2  - TOO EASY": PRINT "3  - BEGINNERS ONLY"
   124  PRINT "4  - A SAFE TRIP": PRINT "5  - AVERAGE": PRINT "6  - SOME CHALLANGE": PRINT "7  - TRICKY"
-  126  PRINT "8  - TOUCH AND GO": PRINT "9  - VERY DANGEROUS": PRINT "10 - YOU'RE NUTS!!!": PRINT 
+  126  PRINT "8  - TOUCH AND GO": PRINT "9  - VERY DANGEROUS": PRINT "10 - YOU'RE NUTS!!!": PRINT
   128  INPUT DF: IF DF<1 OR DF>10 THEN 128
-  140 EXP=0:PSM=20:PS=20:PIM=20:PI=20:PDM=20:PD=20:PBM=20:PB=20:PA=0:PW=0
-  160 BSS=20:BSI=20:BSD=20:BSB=20:BSE=0
+  140  EXP=0:PSM=20:PS=20:PIM=20:PI=20:PDM=20:PD=20:PBM=20:PB=20:PA=0:PW=0
+  160  BSS=20:BSI=20:BSD=20:BSB=20:BSE=0
   200  DIM RL(NR),RW(NR),RH(NR)
   220  DIM RF(NR)
   240  DIM SDL(NR)
   260  DIM MNL(NR),MNT(NR),MNA(NR),MNS(NR),MND(NR),MNB(NR)
   280  DIM CHL(NR),CHS(NR),CHC(NR)
+```
+
+``` basic
 10000  CALL -936: PRINT "CONSTRUCTING A DUNGEON LEVEL"
 10002  FOR I=0 TO H*V:MAP(I)=0: NEXT I
 10005 PF=(EXP+PSM*10+PIM*10+PDM*10+PBM*10)/40
@@ -264,6 +268,9 @@ Visualizza titolo e versione mentre viene caricato il resto del programma.
 14000  PRINT "CHAIN BAM1"
 14010  END
 ```
+
+
+
 
 ## BAM1
 
