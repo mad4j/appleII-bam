@@ -1,6 +1,6 @@
 # Apple II DOS Mini-Manual
 
-## Rerences 
+## References 
  * [Jeff Hurlburt DOS Mini-Manual](https://apple2.org.za/gswv/a2zine/GS.WorldView/Resources/ARTICLES/DOS.MiniManual.html)
 
 Mainly, this mini-manual covers DOS 3.3. There is a short 'intro' section on
