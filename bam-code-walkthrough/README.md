@@ -79,14 +79,15 @@ Visualizza titolo e versione mentre viene caricato il resto del programma.
 
 #### LINE 70-80
 
-Definizione della tabella dei mostri
-| Speed | Dext | Body | Armor | Weap | Color | Freq | Treas% | Treas Val |
-|-------|------|------|-------|------|-------|------|--------|-----------|
-|   50  |   50 |  100 |     0 |    0 |    12 |   25 |     50 |       50  |
-|  100  |  100 |   50 |     1 |    0 |    15 |   30 |     85 |      100  |
-|  150  |  150 |   50 |     2 |    1 |     9 |   35 |     75 |      200  |
-|  200  |   50 |  200 |     3 |    2 |     3 |    8 |     75 |      300  |
-|  200  |  100 |   50 |     4 |    3 |     1 |    2 |    100 |      400  |
+Definizione della tabella dei mostri.
+
+| # | MF Speed | MD Dext | MB Body | MA Armor | MW Weap | MC Color | MF Freq | MT Treas% | MV Treas Val |
+|---|----------|---------|---------|----------|---------|----------|---------|-----------|--------------|
+| 0 |      50  |      50 |     100 |        0 |       0 |       12 |      25 |        50 |           50 |
+| 1 |     100  |     100 |      50 |        1 |       0 |       15 |      30 |        85 |          100 |
+| 2 |     150  |     150 |      50 |        2 |       1 |        9 |      35 |        75 |          200 |
+| 3 |     200  |      50 |     200 |        3 |       2 |        3 |       8 |        75 |          300 |
+| 4 |     200  |     100 |      50 |        4 |       3 |        1 |       2 |       100 |          400 |
 
 ``` basic
    70  NMN=4: DIM MS(NMN),MD(NMN),MB(NMN),MA(NMN),MW(NMN),MC(NMN),MF(NMN),MT(NMN),MV(NMN)
