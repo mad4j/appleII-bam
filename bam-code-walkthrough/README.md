@@ -75,6 +75,20 @@ Visualizza titolo e versione mentre viene caricato il resto del programma.
    15  MODE=0:PX=0:PY=0:RD=0:C=0
    16  DIM A$(15)
    20  DIM MI(7): FOR I=1 TO 7:MI(I)=0: NEXT I
+```
+
+#### LINE 70-80
+
+Definizione della tabella dei mostri
+| Speed | Dext | Body | Armor | Weap | Color | Freq | Treas% | Treas Val |
+|-------|------|------|-------|------|-------|------|--------|-----------|
+|   50  |   50 |  100 |     0 |    0 |    12 |   25 |     50 |       50  |
+|  100  |  100 |   50 |     1 |    0 |    15 |   30 |     85 |      100  |
+|  150  |  150 |   50 |     2 |    1 |     9 |   35 |     75 |      200  |
+|  200  |   50 |  200 |     3 |    2 |     3 |    8 |     75 |      300  |
+|  200  |  100 |   50 |     4 |    3 |     1 |    2 |    100 |      400  |
+
+``` basic
    70  NMN=4: DIM MS(NMN),MD(NMN),MB(NMN),MA(NMN),MW(NMN),MC(NMN),MF(NMN),MT(NMN),MV(NMN)
    71  REM  MONSTER DEFINITIONS, SPEED,DEXT,BODY,ARMOR,WEAPON,COLOR,FREQ,TREAS%,TREA VALUE
    72  MS(0)=50:MD(0)=50:MB(0)=100:MA(0)=0:MW(0)=0:MC(0)=12:MF(0)=25:MT(0)=50:MV(0)=50
@@ -83,7 +97,10 @@ Visualizza titolo e versione mentre viene caricato il resto del programma.
    76  MS(2)=150:MD(2)=150:MB(2)=50:MA(2)=2:MW(2)=1:MC(2)=9:MF(2)=35:MT(2)=75:MV(2)=200
    78  MS(3)=200:MD(3)=50:MB(3)=200:MA(3)=3:MW(3)=2:MC(3)=3:MF(3)=8:MT(3)=75:MV(3)=300
    80  MS(4)=200:MD(4)=100:MB(4)=50:MA(4)=4:MW(4)=3:MC(4)=1:MF(4)=2:MT(4)=100:MV(4)=400
-  100  CALL -936: VTAB 9: TAB 13: PRINT "B E N E A T H": PRINT 
+```
+
+``` basic
+  100  CALL -936: VTAB 9: TAB 13: PRINT "B E N E A T H": PRINT
   101  TAB 9: PRINT "A P P L E   M A N O R"
   102  PRINT : TAB 13: PRINT "BY DON WORTH"
   103  VTAB 20
