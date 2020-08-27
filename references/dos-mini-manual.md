@@ -1,4 +1,4 @@
-# DOS Mini-Manual
+# Apple II DOS Mini-Manual
 
 ## Rerences 
  * [Jeff Hurlburt DOS Mini-Manual](https://apple2.org.za/gswv/a2zine/GS.WorldView/Resources/ARTICLES/DOS.MiniManual.html)
