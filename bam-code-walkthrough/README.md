@@ -37,7 +37,7 @@ Esegue il comando DOS **NOMON**. Questo comando TBV
 
 #### LINE 20
 
-Imposta la modalità test (comando **TEXT**) ed esegue la routine.
+Imposta la modalità test (comando **TEXT**) ed esegue la routine di ripulitura dello schermo. 
 
 ### Display Banner
 
